@@ -13,18 +13,17 @@ rl.question('Digite o número total de eleitores: ', (totalEleitores) => {
     rl.question('Digite o número de votos em branco: ', (votosBranco) => {
         rl.question('Digite o número de votos nulos: ', (votosNulos) => {
             rl.question('Digite o número de votos válidos: ', (votosValidos) => {
-                // Convertendo as entradas para números
+              
                 totalEleitores = parseInt(totalEleitores);
                 votosBranco = parseInt(votosBranco);
                 votosNulos = parseInt(votosNulos);
                 votosValidos = parseInt(votosValidos);
 
-                // Calculando os percentuais
+               
                 let percentualBranco = (votosBranco / totalEleitores) * 100;
                 let percentualNulos = (votosNulos / totalEleitores) * 100;
                 let percentualValidos = (votosValidos / totalEleitores) * 100;
 
-                // Exibindo os resultados
                 console.log(`Percentual de votos em branco: ${percentualBranco.toFixed(2)}%`);
                 console.log(`Percentual de votos nulos: ${percentualNulos.toFixed(2)}%`);
                 console.log(`Percentual de votos válidos: ${percentualValidos.toFixed(2)}%`);

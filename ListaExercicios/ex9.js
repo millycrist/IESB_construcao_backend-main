@@ -10,14 +10,11 @@ const rl = readline.createInterface({
 
 rl.question('Digite o primeiro número: ', (numero1) => {
     rl.question('Digite o segundo número: ', (numero2) => {
-        // Convertendo os números para números inteiros
         numero1 = parseInt(numero1);
         numero2 = parseInt(numero2);
 
-        // Somando os números e multiplicando o resultado pelo primeiro número
         let resultado = (numero1 + numero2) * numero1;
 
-        // Exibindo o resultado
         console.log(`O resultado da operação é: ${resultado}`);
 
         rl.close();

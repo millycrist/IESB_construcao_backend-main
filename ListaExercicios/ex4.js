@@ -11,17 +11,13 @@ const rl = readline.createInterface({
 });
 
 rl.question('Digite o custo de fábrica do carro: ', (custoFabrica) => {
-    // Convertendo o custo de fábrica para número
     custoFabrica = parseFloat(custoFabrica);
 
-    // Definindo o percentual do distribuidor e dos impostos
     const percentualDistribuidor = 0.28;
     const percentualImpostos = 0.45;
 
-    // Calculando o custo final ao consumidor
     let custoFinal = custoFabrica + (custoFabrica * percentualDistribuidor) + (custoFabrica * percentualImpostos);
 
-    // Exibindo o custo final ao consumidor
     console.log(`O custo final ao consumidor é: R$ ${custoFinal.toFixed(2)}`);
 
     rl.close();

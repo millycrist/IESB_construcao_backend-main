@@ -11,14 +11,11 @@ const rl = readline.createInterface({
 
 rl.question('Digite a primeira nota: ', (nota1) => {
     rl.question('Digite a segunda nota: ', (nota2) => {
-        // Convertendo as notas para números
         nota1 = parseFloat(nota1);
         nota2 = parseFloat(nota2);
 
-        // Calculando a média ponderada
         let mediaFinal = (nota1 * 4 + nota2 * 6) / (4 + 6);
 
-        // Exibindo a média final
         console.log(`A média final do aluno é: ${mediaFinal.toFixed(2)}`);
 
         rl.close();

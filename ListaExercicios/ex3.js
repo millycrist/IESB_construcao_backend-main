@@ -10,14 +10,11 @@ const rl = readline.createInterface({
 
 rl.question('Digite o salário mensal atual do funcionário: ', (salarioAtual) => {
     rl.question('Digite o percentual de reajuste: ', (percentualReajuste) => {
-        // Convertendo as entradas para números
         salarioAtual = parseFloat(salarioAtual);
         percentualReajuste = parseFloat(percentualReajuste);
 
-        // Calculando o novo salário
         let novoSalario = salarioAtual + (salarioAtual * (percentualReajuste / 100));
 
-        // Exibindo o novo salário
         console.log(`O novo salário é: R$ ${novoSalario.toFixed(2)}`);
 
         rl.close();

@@ -13,15 +13,12 @@ O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porc
  rl.question('Digite o custo de fábrica do carro: ', (custoFabrica) => {
      rl.question('Digite a porcentagem do distribuidor (%): ', (percentualDistribuidor) => {
          rl.question('Digite a porcentagem de impostos (%): ', (percentualImpostos) => {
-             // Convertendo as entradas para números
              custoFabrica = parseFloat(custoFabrica);
              percentualDistribuidor = parseFloat(percentualDistribuidor);
              percentualImpostos = parseFloat(percentualImpostos);
  
-             // Calculando o custo final ao consumidor
              let custoFinal = custoFabrica + (custoFabrica * (percentualDistribuidor / 100)) + (custoFabrica * (percentualImpostos / 100));
  
-             // Exibindo o custo final ao consumidor
              console.log(`O custo final ao consumidor é: R$ ${custoFinal.toFixed(2)}`);
  
              rl.close();

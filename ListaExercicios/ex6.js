@@ -14,18 +14,16 @@ rl.question('Digite o número de carros vendidos: ', (numCarrosVendidos) => {
     rl.question('Digite o valor total das vendas: ', (valorTotalVendas) => {
         rl.question('Digite o salário fixo: ', (salarioFixo) => {
             rl.question('Digite o valor por carro vendido: ', (valorPorCarro) => {
-                // Convertendo as entradas para números
+
                 numCarrosVendidos = parseInt(numCarrosVendidos);
                 valorTotalVendas = parseFloat(valorTotalVendas);
                 salarioFixo = parseFloat(salarioFixo);
                 valorPorCarro = parseFloat(valorPorCarro);
 
-                // Calculando o salário final
                 let comissaoCarros = numCarrosVendidos * valorPorCarro;
                 let comissaoVendas = valorTotalVendas * 0.05;
                 let salarioFinal = salarioFixo + comissaoCarros + comissaoVendas;
 
-                // Exibindo o salário final
                 console.log(`O salário final do vendedor é: R$ ${salarioFinal.toFixed(2)}`);
 
                 rl.close();

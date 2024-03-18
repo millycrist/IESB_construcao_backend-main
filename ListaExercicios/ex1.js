@@ -14,16 +14,16 @@ rl.question('Digite a primeira nota: ', (nota1) => {
     rl.question('Digite a segunda nota: ', (nota2) => {
         rl.question('Digite a terceira nota: ', (nota3) => {
             rl.question('Digite a quarta nota: ', (nota4) => {
-                // Convertendo as notas para números
+               
                 nota1 = Number(nota1);
                 nota2 = Number(nota2);
                 nota3 = Number(nota3);
                 nota4 = Number(nota4);
 
-                // Calculando a média
+               
                 let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-                // Verificando se foi aprovado ou reprovado
+             
                 if (media >= 7.0) {
                     console.log(`Média: ${media.toFixed(1)} - Aprovado`);
                 } else {
